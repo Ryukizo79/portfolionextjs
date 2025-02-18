@@ -317,7 +317,7 @@ const Experiences = () => {
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Implemented automation using Excel's SUMIFS command to streamline document preparation processes, replacing manual creation of two documents. This automation enables real-time updates across files, calculating costs for each cost center across all airports efficiently.
+                    Implemented automation using Excel SUMIFS command to streamline document preparation processes, replacing manual creation of two documents. This automation enables real-time updates across files, calculating costs for each cost center across all airports efficiently.
                   </p>
                 </div>
               </div>

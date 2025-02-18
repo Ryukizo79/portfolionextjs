@@ -7,7 +7,6 @@ export const InfiniteMovingCards = ({
   items,
   direction = "left",
   speed = "fast",
-  pauseOnHover = true,
   className,
 }: {
   items: {
@@ -86,7 +85,7 @@ export const InfiniteMovingCards = ({
         //   pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item, ) => (
           <li
             className="flex justify-center items-center w-[250px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 sm:px-8 px-2 py-6 sm:w-[450px]"
             style={{
