@@ -62,7 +62,8 @@ const Projects = () => {
       id='projects'
     >
       <h2 className='sm:text-3xl text-sm font-bold text-white max-w-full sm:py-10 py-4 text-center'>
-        Educational Projects: Applied Knowledge in Action
+        {/* Educational Projects: Applied Knowledge in Action */}
+        Learning & Legacy: Projects, Certifications, and Award-Winning Accomplishments
       </h2>
       <div className='w-full flex flex-col justify-center items-center space-y-4'>
         {projectRows.map((row, rowIndex) => (
