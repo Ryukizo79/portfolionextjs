@@ -16,8 +16,7 @@ const Navbar = ({ className }: { className?: string }) => {
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="About" href="/" />
         <MenuItem setActive={setActive} active={active} item="Experiences" href="#experiences" />
-        <MenuItem setActive={setActive} active={active} item="Projects" href="#projects" />
-        <MenuItem setActive={setActive} active={active} item="Achievements" href="#achievements" />
+        <MenuItem setActive={setActive} active={active} item="Achievements" href="#projects" />
       </Menu>
     </div>
   );

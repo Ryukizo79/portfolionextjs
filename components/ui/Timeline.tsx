@@ -36,7 +36,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="relative w-full bg-transparent  font-sans md:px-10 sm:mt-40 mt-20"
+      className="relative w-full bg-transparent  font-sans md:px-10 "
       ref={containerRef}
     >
       <BackgroundGradient className="rounded-[22px] bg-black text-center w-full">

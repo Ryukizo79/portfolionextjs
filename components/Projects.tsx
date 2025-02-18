@@ -23,27 +23,27 @@ const projects = [
     image: '/tsdweb.png',
     link: 'https://iotdoorlock.com',
   },
-  // {
-  //   title: 'Spring Boot Workshop (Iverson)',
-  //   description:
-  //     'Learning Java and Spring Boot is key to building enterprise APIs, with Java’s OOP foundation and Spring Boot’s simplified backend development and API integration.',
-  //   image: '/springboot cert.png',
-  //   link: 'https://iotdoorlock.com',
-  // },
-  // {
-  //   title: 'HTML, CSS and Javascript (Iverson)',
-  //   description:
-  //     'Learning HTML, CSS, and JavaScript is essential for building enterprise applications. HTML structures the web pages, CSS styles them, and JavaScript adds interactivity.',
-  //   image: '/html cert.png',
-  //   link: 'https://iotdoorlock.com',
-  // },
-  // {
-  //   title: 'AWS re/Start Graduate',
-  //   description:
-  //     'Learning the fundamentals of AWS involves understanding key cloud concepts, such as computing, storage, networking, and security. ',
-  //   image: '/aws cert.png',
-  //   link: 'https://iotdoorlock.com',
-  // },
+  {
+    title: 'Spring Boot Workshop (Iverson)',
+    description:
+      'Learning Java and Spring Boot is key to building enterprise APIs, with Java’s OOP foundation and Spring Boot’s simplified backend development and API integration.',
+    image: '/springboot cert.png',
+    link: 'https://iotdoorlock.com',
+  },
+  {
+    title: 'HTML, CSS and Javascript (Iverson)',
+    description:
+      'Learning HTML, CSS, and JavaScript is essential for building enterprise applications. HTML structures the web pages, CSS styles them, and JavaScript adds interactivity.',
+    image: '/html cert.png',
+    link: 'https://iotdoorlock.com',
+  },
+  {
+    title: 'AWS re/Start Graduate',
+    description:
+      'Learning the fundamentals of AWS involves understanding key cloud concepts, such as computing, storage, networking, and security. ',
+    image: '/aws cert.png',
+    link: 'https://iotdoorlock.com',
+  },
 ];
 
 // Function to split projects into chunks of 3

@@ -7,7 +7,7 @@ import { MdEmail } from 'react-icons/md'
 const Hero = () => {
   return (
     <section id='about' className='sm:px-10 px-5'>
-        <div className='py-[4rem]'>
+        <div className=' py-[6rem]'>
             <div>
             {/* md:-left-32 md:-top-20 md:tracking-wider*/}
                 <Spotlight className='sm:-top-40 sm:-left-10 left-10 -top-20  h-screen' fill='white'/>
@@ -18,7 +18,7 @@ const Hero = () => {
                 {/* Radial gradient for the container to give a faded look */}
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
             </div>
-            <div className='flex flex-row items-center justify-center relative my-[3.5rem] z-10'>
+            <div className='flex flex-row items-center justify-center relative  z-10'>
                 <div className='sm:max-w-[80%] max-w-[90%] flex flex-col items-center justify-center space-y-4'>
                     {/* <h2 className='uppercase tracking-widest text-sm text-center text-blue-100 max-w-80'>
                         Hi, nice to meet you

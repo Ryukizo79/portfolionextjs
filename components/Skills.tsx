@@ -104,7 +104,7 @@ const Skills = () => {
         },
       ];
   return (
-    <section id="skills" className='sm:px-10 px-5'>
+    <section id="skills" className='sm:px-10 px-5 pb-[8rem]'>
         <InfiniteMovingCards
             items={skills}
             direction="right"
