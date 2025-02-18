@@ -1,6 +1,5 @@
 import Achievements from "@/components/Achievements";
 import Experiences from "@/components/Experiences";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -18,7 +17,6 @@ export default function Home() {
         <Experiences/>
         <Projects/>
         <Achievements/>
-        {/* <Footer/> */}
       </div>
       
     </main>

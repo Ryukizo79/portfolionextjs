@@ -1,8 +1,7 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
-import MagicButton from './ui/MagicButton'
-import { FaLocationArrow, FaUniversity } from 'react-icons/fa'
+import {  FaUniversity } from 'react-icons/fa'
 import { BiSolidCertification } from "react-icons/bi";
 import { MdEmail } from 'react-icons/md'
 const Hero = () => {
