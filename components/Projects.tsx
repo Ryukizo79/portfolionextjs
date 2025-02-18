@@ -7,7 +7,7 @@ const projects = [
     description:
       'Developed a dynamic and interactive portfolio website using Next.js and Aceternity UI to showcase personal projects, skills, and professional experience.',
     image: '/portfolio web.png',
-    link: 'https://yourportfolio.com',
+    link: 'https://rakinportfolio.vercel.app/',
   },
   {
     title: 'Document Verification Using Blockchain',
@@ -28,21 +28,21 @@ const projects = [
     description:
       'Learning Java and Spring Boot is key to building enterprise APIs, with Java’s OOP foundation and Spring Boot’s simplified backend development and API integration.',
     image: '/springboot cert.png',
-    link: 'https://iotdoorlock.com',
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7146900189465751553/',
   },
   {
     title: 'HTML, CSS and Javascript (Iverson)',
     description:
       'Learning HTML, CSS, and JavaScript is essential for building enterprise applications. HTML structures the web pages, CSS styles them, and JavaScript adds interactivity.',
     image: '/html cert.png',
-    link: 'https://iotdoorlock.com',
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7148888671570583554/',
   },
   {
     title: 'AWS re/Start Graduate',
     description:
       'Learning the fundamentals of AWS involves understanding key cloud concepts, such as computing, storage, networking, and security. ',
     image: '/aws cert.png',
-    link: 'https://iotdoorlock.com',
+    link: 'https://www.credly.com/badges/a1d1709c-bad4-43bb-9d7a-05d3ad3bfad6/linked_in?t=sjj7rt',
   },
 ];
 
