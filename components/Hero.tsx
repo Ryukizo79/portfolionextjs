@@ -19,7 +19,7 @@ const Hero = () => {
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
             </div>
             <div className='flex flex-row items-center justify-center relative  z-10'>
-                <div className='sm:max-w-[80%] max-w-[90%] flex flex-col items-center justify-center space-y-4'>
+                <div className='w-[90%] flex flex-col items-center justify-center space-y-4'>
                     {/* <h2 className='uppercase tracking-widest text-sm text-center text-blue-100 max-w-80'>
                         Hi, nice to meet you
                     </h2> */}
@@ -27,8 +27,8 @@ const Hero = () => {
                         className='text-center sm:text-7xl text-4xl'
                         words='Hi, My Name is Muhammad Dhiyaul Rakin'
                     />
-                    <div className='font-bold w-full flex sm:flex-row flex-col sm:text-sm text-xs text-white items-center justify-center sm:space-x-8 space-x-0 sm:space-y-0 space-y-2'>
-                        <div className=' flex flex-row items-center justify-center sm:space-x-8 space-x-2'>
+                    <div className='font-bold w-full flex sm:flex-row flex-col sm:text-sm text-[0.6rem] text-white items-center justify-center sm:space-x-8 space-x-0 sm:space-y-0 space-y-2'>
+                        <div className=' flex flex-row items-center justify-center space-x-8'>
                             <div className=' flex flex-row items-center justify-center space-x-2'>
                                 <div>
                                     <FaUniversity />
@@ -58,7 +58,7 @@ const Hero = () => {
                         </div>
                         
                     </div>
-                    <p className='w-[80%] text-center   sm:text-xl text-sm pt-4'>
+                    <p className='sm:w-[80%] w-full text-center   sm:text-xl text-sm pt-4'>
                         Dedicated and results-driven professional with a passion for software, data analytics, IoT, and programming. Focused on improving business productivity through innovative solutions and problem-solving.
                     </p>
                     {/* <a href='#about'>
