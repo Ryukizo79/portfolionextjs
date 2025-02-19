@@ -25,33 +25,38 @@ export const BentoGridItem = ({
   description,
   header,
   icon,
+  link,
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   icon?: React.ReactNode;
+  link?: string;
 }) => {
   return (
-    <div
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border border-b-0 border-slate-700 justify-between flex flex-col space-y-4",
+        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none border border-b-0 border-slate-700 justify-between flex flex-col ",
         className
       )}
       style={{
-        background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
+        background: "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
       }}
     >
       {header}
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
+      <div className="group-hover/bento:translate-x-2 transition duration-200 sm:p-8 p-4">
         {icon}
-        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
-          {title}
+        <div className="font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+            {title}  
         </div>
-        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
+        <div className="text-justify text-neutral-600 text-xs dark:text-neutral-300">
           {description}
         </div>
       </div>
-    </div>
+    </a>
   );
 };

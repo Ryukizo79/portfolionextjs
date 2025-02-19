@@ -28,6 +28,8 @@ const config = {
     extend: {
       colors: {
         'tertiary':'#64e9ff',
+        'buttonsecondary':'#64e9ff',
+        'buttonprimary':'#103ce7',
         black: {
           DEFAULT: "#000",
           100: "#000319",

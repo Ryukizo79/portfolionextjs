@@ -19,7 +19,7 @@ const Hero = () => {
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
             </div>
             <div className='flex flex-row items-center justify-center relative  z-10'>
-                <div className='sm:max-w-[80%] max-w-[90%] flex flex-col items-center justify-center space-y-4'>
+                <div className='w-[90%] flex flex-col items-center justify-center space-y-4'>
                     {/* <h2 className='uppercase tracking-widest text-sm text-center text-blue-100 max-w-80'>
                         Hi, nice to meet you
                     </h2> */}
@@ -28,37 +28,42 @@ const Hero = () => {
                         words='Hi, My Name is Muhammad Dhiyaul Rakin'
                     />
                     <div className='font-bold w-full flex sm:flex-row flex-col sm:text-sm text-xs text-white items-center justify-center sm:space-x-8 space-x-0 sm:space-y-0 space-y-2'>
-                        <div className=' flex flex-row items-center justify-center sm:space-x-8 space-x-2'>
-                            <div className=' flex flex-row items-center justify-center space-x-2'>
-                                <div>
-                                    <FaUniversity />
-                                </div>
-                                <div>
-                                    <p>Multimedia University (MMU)</p>
+                        
+                        <div className='sm:w-[55%] w-full flex sm:flex-row flex-col items-center justify-center sm:space-x-8 space-x-0 sm:space-y-0 space-y-2'>
+                            <div className='w-full bg-gradient-to-r from-buttonprimary to-buttonsecondary p-1 rounded-full'>
+                                <div className='w-full bg-black flex flex-row items-center justify-center space-x-2 py-2 px-4 rounded-full'>
+                                    <div>
+                                        <FaUniversity />
+                                    </div>
+                                    <div>
+                                        <p>Multimedia University (MMU)</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className=' flex flex-row items-center justify-center space-x-2'>
-                                <div>
-                                    <MdEmail />
-                                </div>
-                                <div>
-                                    <p>dhiyaulrakin@gmail.com</p>
+                            <div className='w-full bg-gradient-to-r from-buttonprimary to-buttonsecondary p-1 rounded-full'>
+                                <div className='w-full bg-black flex flex-row items-center justify-center space-x-2 py-2 px-4 rounded-full'>
+                                    <div>
+                                        <MdEmail />
+                                    </div>
+                                    <div>
+                                        <p>dhiyaulrakin@gmail.com</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div className='flex flex-row items-center justify-center space-x-2'>
-                            <div>
-                                <BiSolidCertification />
+                        <div className='bg-gradient-to-r from-buttonprimary to-buttonsecondary p-1 rounded-full'>
+                            <div className='bg-black flex flex-row items-center justify-center space-x-2 py-2 px-4 rounded-full'>
+                                <div>
+                                    <BiSolidCertification />
+                                </div>
+                                <div>
+                                    <p>Bachelor of Electronics Engineering (Computer)</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>Bachelor of Electronics Engineering - Computer (3.89)</p>
-                            </div>
-
                         </div>
                         
                     </div>
-                    <p className='text-center   sm:text-xl text-sm'>
+                    <p className='w-[70%] text-center   sm:text-xl text-sm pt-4'>
                         Dedicated and results-driven professional with a passion for software, data analytics, IoT, and programming. Focused on improving business productivity through innovative solutions and problem-solving.
                     </p>
                     {/* <a href='#about'>

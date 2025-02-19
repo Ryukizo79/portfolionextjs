@@ -5,7 +5,6 @@ import {
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import { BackgroundGradient } from "./BackgroundGradient";
 
 interface TimelineEntry {
   title: string;
@@ -39,13 +38,22 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="relative w-full bg-transparent  font-sans md:px-10 "
       ref={containerRef}
     >
-      <BackgroundGradient className="rounded-[22px] bg-black text-center w-full">
+      <div className='bg-gradient-to-r from-buttonprimary to-buttonsecondary relative w-full flex text-center items-center justify-center sm:p-2 p-1 rounded-full'>
+        <div className='bg-black rounded-full w-full px-4'>
+          <h2 className='sm:text-3xl text-sm font-bold text-white w-full sm:py-10 py-4'>
+              {/* Notable Accomplishments: Trainings, Certifications & Awards */}
+              Career Milestones: A Journey Through My Work Experiences
+          </h2>
+
+        </div>
+      </div>
+      {/* <BackgroundGradient className="rounded-[22px] bg-black text-center w-full">
         <div className="flex justify-center items-center w-full px-2  sm:py-8 py-4">
           <h2 className="font-bold sm:text-3xl text-sm text-white max-w-full">
             Career Milestones: A Journey Through My Work Experiences
           </h2>
         </div>
-      </BackgroundGradient>
+      </BackgroundGradient> */}
       
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
