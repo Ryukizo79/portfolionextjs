@@ -53,14 +53,17 @@ export const BentoGridItem = ({
             {title}
           </div>
           <div className="">
-            <a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className='text-white hover:text-tertiary text-xs'
-            >
-              <FaExternalLinkAlt />
-            </a>
+            {link && (
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className='text-white hover:text-tertiary text-xs'
+              >
+                <FaExternalLinkAlt />
+              </a>
+            )}
+            
           </div>
         </div>
         <div className="text-justify text-white text-xs ">

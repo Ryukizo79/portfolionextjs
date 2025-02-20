@@ -55,7 +55,7 @@ const Achievements = () => {
         </div>,
       className: "md:col-span-1",
       icon:'',
-      link: 'https://iotdoorlock.com',
+      link: '',
     },
     {
       title: "AWS re/Start Graduate",
