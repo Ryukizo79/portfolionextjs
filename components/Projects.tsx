@@ -20,7 +20,7 @@ const projects = [
     title: 'Internet of Things (IoT) Door Lock System',
     description:
       'System includes NFC sensors, mobile application developed using MIT App Inventor and lock actuator consist of using Arduino UNO.',
-    image: '/tsdweb.png',
+    image: '/iot.png',
     link: 'https://iotdoorlock.com',
   },
   {

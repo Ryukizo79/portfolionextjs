@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export const BentoGrid = ({
   className,
@@ -35,10 +36,7 @@ export const BentoGridItem = ({
   link?: string;
 }) => {
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
+    <div
       className={cn(
         "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none border border-b-0 border-slate-700 justify-between flex flex-col ",
         className
@@ -50,13 +48,25 @@ export const BentoGridItem = ({
       {header}
       <div className="group-hover/bento:translate-x-2 transition duration-200 sm:p-8 py-4 px-8">
         {icon}
-        <div className="font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
-            {title}  
+        <div className="text-sm flex flex-row  items-center space-x-2 font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+          <div className="">
+            {title}
+          </div>
+          <div className="">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className='text-white hover:text-tertiary text-xs'
+            >
+              <FaExternalLinkAlt />
+            </a>
+          </div>
         </div>
-        <div className="text-justify text-neutral-600 text-xs dark:text-neutral-300">
+        <div className="text-justify text-white text-xs ">
           {description}
         </div>
       </div>
-    </a>
+    </div>
   );
 };
