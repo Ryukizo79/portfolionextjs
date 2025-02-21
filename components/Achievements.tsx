@@ -132,7 +132,7 @@ const Achievements = () => {
 
       
   return (
-    <section id="achievements" className='w-full relative mb-20 sm:px-10 px-5'>
+    <section id="achievements" className='w-full relative mb-20 sm:px-10 px-5 pt-[8rem]'>
         <div className='bg-gradient-to-r from-buttonprimary to-buttonsecondary relative w-full flex text-center items-center justify-center sm:p-2 p-1 mb-20 rounded-full'>
           <div className='bg-black rounded-full w-full px-4'>
             <h2 className='sm:text-3xl text-sm font-bold text-white w-full sm:py-10 py-4'>

@@ -56,7 +56,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       </BackgroundGradient> */}
       
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl mx-auto sm:pb-20 pb-4">
         {data.map((item, index) => (
           <div
             key={index}

@@ -326,7 +326,7 @@ const Experiences = () => {
         },
     ];
   return (
-    <section id="experiences" className='sm:px-10 px-5'>
+    <section id="experiences" className='sm:px-10 px-5 pt-[8rem]'>
         <Timeline data={data}/>
     </section>
   )
