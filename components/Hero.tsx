@@ -14,7 +14,7 @@ const Hero = () => {
                 <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill='#64e9ff'/>
                 <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill='#64e9ff'/>
             </div>
-            <div className="h-full w-full dark:bg-black-100 bg-white  bg-grid-white/[0.03] flex items-center justify-center absolute top-0 left-0">
+            <div className="h-full w-full bg-black-100   bg-grid-white/[0.03] flex items-center justify-center absolute top-0 left-0">
                 {/* Radial gradient for the container to give a faded look */}
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
             </div>

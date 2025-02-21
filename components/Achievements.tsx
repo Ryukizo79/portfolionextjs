@@ -125,7 +125,7 @@ const Achievements = () => {
         </div>,
       className: "md:col-span-2",
       icon: '',
-      link: 'https://www.credly.com/badges/a1d1709c-bad4-43bb-9d7a-05d3ad3bfad6/linked_in?t=sjj7rt',
+      link: '',
     },
   ];
 

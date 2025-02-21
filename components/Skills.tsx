@@ -15,7 +15,7 @@ const Skills = () => {
                   src='/spring logo.png'
                   width={250} 
                   height={250} 
-                  className=" h-10 sm:h-[5rem]  w-full"
+                  className=" h-8 sm:h-[5rem]  w-full"
                 />
             </div>
           )
@@ -31,7 +31,7 @@ const Skills = () => {
                   src='/react logo.png'
                   width={250} 
                   height={250} 
-                  className=" h-10 sm:h-[5rem]  w-full"
+                  className=" h-8 sm:h-[5rem]  w-full"
                 />
             </div>
           )
@@ -47,7 +47,7 @@ const Skills = () => {
                   src='/angular logo.png'
                   width={250} 
                   height={250} 
-                  className=" h-10 sm:h-[5rem]   w-full"
+                  className=" h-8 sm:h-[5rem]   w-full"
                 />
             </div>
           )
@@ -65,7 +65,7 @@ const Skills = () => {
                   src='/java logo.png'
                   width={250} 
                   height={250} 
-                  className=" h-10 sm:h-[5rem]  w-full"
+                  className=" h-8 sm:h-[5rem]  w-full"
                 />
             </div>
           )
@@ -81,7 +81,7 @@ const Skills = () => {
                   src='/docker logo.png'
                   width={250} 
                   height={250} 
-                  className=" h-10 sm:h-[5rem]  w-full"
+                  className=" h-8 sm:h-[5rem]  w-full"
                 />
             </div>
           )
@@ -97,7 +97,7 @@ const Skills = () => {
                   src='/azure logo.png'
                   width={250} 
                   height={250} 
-                  className=" h-5 sm:h-[3rem]   w-full"
+                  className=" h-4 sm:h-[3rem]   w-full"
                 />
             </div>
           )
