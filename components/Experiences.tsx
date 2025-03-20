@@ -5,9 +5,127 @@ import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 const Experiences = () => {
     const data = [
         {
+          title: "Executive IT (Business Solution)",
+          company: "Malaysia Airports Holdings Berhad (MAHB)",
+          year: "Jan 2025 - Present",
+          content: (
+            <div className="space-y-4 text-justify">
+              <p className="text-white sm:text-lg text-sm font-bold">
+                KUL Slot Coordination (Project Manager)
+              </p>
+              <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold  text-xs">
+                <div className="flex flex-row space-x-2">
+                  <div className="w-fit rounded-full bg-emerald-400 px-4 py-2">
+                    Project Management
+                  </div>
+                </div>
+                <div className="flex flex-row space-x-2">
+                  <div className="w-fit rounded-full bg-amber-400 px-4 py-2">
+                    Business Analyst
+                  </div>
+                </div>
+                <div className="flex flex-row space-x-2">
+                  <div className="w-fit rounded-full bg-violet-400 px-4 py-2">
+                    Problem Solving
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col space-y-4">
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Optimized the airline parking bay booking process by enhancing communication and resource allocation between the Parking Bay and Flight Operations teams.
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Led the implementation of a cost-effective solution using Google AppSheet, streamlining communication and record-keeping, eliminating reliance on email-based processes.
+                  </p>
+                </div>
+              </div>
+              {/* <div className="grid grid-cols-1 gap-4">
+                <Image
+                  alt="" 
+                  src='/tsdweb.png'
+                  width={1000} 
+                  height={1000} 
+                  className="rounded-lg object-cover h-fit sm:h-46  w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                />
+                
+              </div> */}
+              {/*  */}
+              <p className="text-white sm:text-lg text-sm font-bold">
+                Project Management (Business Analyst)
+              </p>
+              <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold  text-xs">
+                <div className="flex flex-row space-x-2">
+                  <div className="w-fit rounded-full bg-emerald-400 px-4 py-2">
+                    Project Management
+                  </div>
+                </div>
+                <div className="flex flex-row space-x-2">
+                  <div className="w-fit rounded-full bg-amber-400 px-4 py-2">
+                    Business Analyst
+                  </div>
+                </div>
+                <div className="flex flex-row space-x-2">
+                  <div className="w-fit rounded-full bg-violet-400 px-4 py-2">
+                    Problem Solving
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col space-y-4">
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Led cross-functional collaboration between stakeholders and vendors to align project objectives, define clear requirements, and ensure seamless issue resolution throughout the development lifecycle.
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Analyzed and integrated multiple data sources (real-time flight information, indoor wayfinding, promotions, SAP, and airport directories) to optimize business processes and enhance the passenger journey.
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Managed end-to-end development of multiple airport applications, including MYairports, Aviation Protection Security Service (APSS), and Malaysia Airports Group Procurement (MAGP), ensuring alignment with business needs and operational goals.
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Defined and optimized UI/UX strategies, working closely with designers and developers to enhance usability, accessibility, and engagement for passenger-facing applications.
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Delivered tailored digital solutions, translating business requirements into scalable applications to drive operational efficiency and improve user experience.
+                  </p>
+                </div>
+              </div>
+              {/* <div className="grid grid-cols-1 gap-4">
+                <Image
+                  alt="" 
+                  src='/myaeroweb.png'
+                  width={1000} 
+                  height={1000} 
+                  className="rounded-lg object-cover h-fit sm:h-46  w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                />
+                
+              </div> */}
+              
+            </div>
+            
+          ),
+        },
+        {
           title: "Executive IT Delivery",
           company: "Malaysia Airports Holdings Berhad (MAHB)",
-          year: "June 2026 - Present",
+          year: "June 2023 - Dec 2024",
           content: (
             <div className="space-y-4 text-justify">
               <p className="text-white sm:text-lg text-sm font-bold">
@@ -173,40 +291,7 @@ const Experiences = () => {
                 
               </div> */}
               {/*  */}
-              <p className="text-white font-bold sm:text-lg text-sm">
-                Project Management (Vendor Development)
-              </p>
-              <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold  text-xs">
-                <div className="flex flex-row space-x-2">
-                  <div className="w-fit rounded-full bg-emerald-400 px-4 py-2">
-                    Project Management
-                  </div>
-                </div>
-                <div className="flex flex-row space-x-2">
-                  <div className="w-fit rounded-full bg-amber-400 px-4 py-2">
-                    Business Analyst
-                  </div>
-                </div>
-                <div className="flex flex-row space-x-2">
-                  <div className="w-fit rounded-full bg-violet-400 px-4 py-2">
-                    Problem Solving
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col space-y-4">
-                <div className="flex flex-row space-x-4 ">
-                  <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
-                  <p className="text-white sm:text-base text-xs w-[95%]">
-                    Implemented Agile methodology to ensure the design and functionality align with business user requirements provided by the vendor.
-                  </p>
-                </div>
-                <div className="flex flex-row space-x-4 ">
-                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
-                  <p className="text-white sm:text-base text-xs w-[95%]">
-                    Reviewed system designs and code, conducted testing, and managed team members to ensure vendors fully understood business user requirements while delivering solutions for APIs and frontend functionalities through comprehensive analysis of those requirements (MYairports and 2 other projects).
-                  </p>
-                </div>
-              </div>
+             
             </div>
             
           ),

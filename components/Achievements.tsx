@@ -109,24 +109,24 @@ const Achievements = () => {
       icon: '',
       link: 'https://www.linkedin.com/feed/update/urn:li:activity:7148888671570583554/',
     },
-    {
-      title: "IT Division Pinnacle Award 2024",
-      description:
-        "Recognized as a top performer within the first year of employment by providing innovative and effective solutions that significantly improved business operations. Consistently delivered best practices that streamlined processes, enhanced efficiency, and maximized user satisfaction, contributing to overall organizational success.",
-      header: 
-        <div className="flex flex-1 w-full h-[10rem] min-h-[6rem] ">
-          <Image
-            alt="" 
-            src='/aws cert.png'
-            width={1000} 
-            height={1000} 
-            className="rounded-t-lg  h-[10rem] min-h-[6rem]  w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-          />
-        </div>,
-      className: "md:col-span-2",
-      icon: '',
-      link: '',
-    },
+    // {
+    //   title: "IT Division Pinnacle Award 2024",
+    //   description:
+    //     "Recognized as a top performer within the first year of employment by providing innovative and effective solutions that significantly improved business operations. Consistently delivered best practices that streamlined processes, enhanced efficiency, and maximized user satisfaction, contributing to overall organizational success.",
+    //   header: 
+    //     <div className="flex flex-1 w-full h-[10rem] min-h-[6rem] ">
+    //       <Image
+    //         alt="" 
+    //         src='/aws cert.png'
+    //         width={1000} 
+    //         height={1000} 
+    //         className="rounded-t-lg  h-[10rem] min-h-[6rem]  w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+    //       />
+    //     </div>,
+    //   className: "md:col-span-2",
+    //   icon: '',
+    //   link: '',
+    // },
   ];
 
 
