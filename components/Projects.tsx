@@ -1,119 +1,182 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
+import { SiIpfs, SiNextdotjs, SiTypescript } from 'react-icons/si';
+import { TbBrandFramerMotion, TbBrandReact } from 'react-icons/tb';
+import { FaEthereum } from 'react-icons/fa';
+import { RiTailwindCssFill } from 'react-icons/ri';
+import { IoLogoFirebase } from 'react-icons/io5';
+import { DiMitlicence } from 'react-icons/di';
+import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: 'Self Portfolio',
+    title: 'Fixome',
+    description:
+      'Developed a dynamic and interactive Centralized platform that connects homeowners with trusted, top-rated home service providers in their area making it easy to discover, compare, and hire the best professionals for every home maintenance need.',
+    image: '/fixome.png',
+    link: 'https://fixome.vercel.app/',
+    techIcons: [
+      <SiNextdotjs key="nextjs" className="text-black-100 bg-white sm:p-4 p-1 sm:rounded-xl rounded-lg" />, 
+      <TbBrandFramerMotion key="framer" className="text-black-100 bg-yellow-300 sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
+      <RiTailwindCssFill key="tailwind" className="text-white bg-buttonsecondary sm:p-4 p-1 sm:rounded-xl rounded-lg"/>,
+      <SiTypescript key="typescript" className="text-white bg-sky-400 sm:p-4 p-1 sm:rounded-xl rounded-lg"/>
+    ],
+  },
+  {
+    title: 'Portfolio',
     description:
       'Developed a dynamic and interactive portfolio website using Next.js and Aceternity UI to showcase personal projects, skills, and professional experience.',
     image: '/portfolio web.png',
     link: 'https://rakinportfolio.vercel.app/',
+    techIcons: [
+      <SiNextdotjs key="nextjs" className="text-black-100 bg-white sm:p-4 p-2 rounded-xl" />, 
+      <TbBrandFramerMotion key="framer" className="text-black-100 bg-yellow-300 sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
+      <RiTailwindCssFill key="tailwind" className="text-white bg-buttonsecondary sm:p-4 p-1 sm:rounded-xl rounded-lg"/>
+    ],
   },
   {
     title: 'Document Verification Using Blockchain',
     description:
       'Effectively detect and identify any fraud or modifications made to original files, including the slightest changes, ensuring data integrity and security.',
     image: '/blockchain.png',
-    link: 'https://www.researchgate.net/publication/368491012_Design_a_Document_Verification_System_Based_on_Blockchain_Technology',
+    link: 'https://www.researchgate.net/publication/368491012',
+    techIcons: [
+      <TbBrandReact key="react" className="text-white bg-buttonsecondary sm:p-4 p-1 sm:rounded-xl rounded-lg"/>,
+      <FaEthereum key="etheruem" className="text-black-100 bg-white sm:p-4 p-1 sm:rounded-xl rounded-lg"/>,
+      <SiIpfs key="ipfs" className="text-white bg-teal-400 sm:p-4 p-1 sm:rounded-xl rounded-lg"/>
+    ],
   },
   {
     title: 'Internet of Things (IoT) Door Lock System',
     description:
       'System includes NFC sensors, mobile application developed using MIT App Inventor and lock actuator consist of using Arduino UNO.',
     image: '/iot.png',
-    link: 'https://iotdoorlock.com',
-  },
-  {
-    title: 'Spring Boot Workshop (Iverson)',
-    description:
-      'Learning Java and Spring Boot is key to building enterprise APIs, with Java’s OOP foundation and Spring Boot’s simplified backend development and API integration.',
-    image: '/springboot cert.png',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7146900189465751553/',
-  },
-  {
-    title: 'HTML, CSS and Javascript (Iverson)',
-    description:
-      'Learning HTML, CSS, and JavaScript is essential for building enterprise applications. HTML structures the web pages, CSS styles them, and JavaScript adds interactivity.',
-    image: '/html cert.png',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7148888671570583554/',
-  },
-  {
-    title: 'AWS re/Start Graduate',
-    description:
-      'Learning the fundamentals of AWS involves understanding key cloud concepts, such as computing, storage, networking, and security. ',
-    image: '/aws cert.png',
-    link: 'https://www.credly.com/badges/a1d1709c-bad4-43bb-9d7a-05d3ad3bfad6/linked_in?t=sjj7rt',
+    link: '',
+    techIcons: [
+      <IoLogoFirebase key="firebase" className="text-white bg-amber-400 sm:p-4 p-1 sm:rounded-xl rounded-lg"/>,
+      <DiMitlicence key="mit" className="text-white bg-orange-400 sm:p-4 p-1 sm:rounded-xl rounded-lg"/>
+    ],
   },
 ];
 
-// Function to split projects into chunks of 3
-const chunkArray = <T,>(array: T[], size: number): T[][] => {
-  return array.length 
-    ? [array.slice(0, size), ...chunkArray(array.slice(size), size)]
-    : [];
-};
 
 const Projects = () => {
-  const projectRows = chunkArray(projects, 3);
 
   return (
     <section
-      className='relative flex flex-col justify-center items-center w-full space-y-14 mb-20 sm:px-10 px-5'
+      className='relative flex flex-col justify-center items-center w-full space-y-14 mb-20 sm:px-10 px-5 sm:pt-[8rem] pt-[6rem]'
       id='projects'
     >
-      <h2 className='sm:text-3xl text-sm font-bold text-white max-w-full sm:py-10 py-4 text-center'>
-        {/* Educational Projects: Applied Knowledge in Action */}
-        Learning & Legacy: Projects, Certifications, and Award-Winning Accomplishments
-      </h2>
-      <div className='w-full flex flex-col justify-center items-center space-y-4'>
-        {projectRows.map((row, rowIndex) => (
-          <div
-            key={rowIndex}
-            className='w-full flex sm:flex-row flex-col justify-center items-center sm:space-x-4 space-x-0 sm:space-y-0 space-y-4'
-          >
-            {row.map((project, index) => (
-              <div
-                key={index}
-                className='flex flex-col justify-center items-center w-full sm:w-1/3 relative rounded-2xl border border-b-0 border-slate-700 sm:px-8 px-4 py-6'
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.5 }}
+        className='bg-gradient-to-r from-buttonprimary to-buttonsecondary relative w-full flex text-center items-center justify-center sm:p-2 p-1 sm:mb-14 mb-2 rounded-full'
+      >
+        <div className='bg-black rounded-full w-full px-4'>
+          <h2 className='sm:text-3xl text-sm font-bold text-white w-full sm:py-10 py-4'>
+            Real-World Projects in Full-Stack Development and Problem Solving
+          </h2>
+
+        </div>
+      </motion.div>
+      <div className="w-full flex flex-col items-center space-y-20 px-4">
+        {projects.map((project, index) => (
+          <div key={index} className="w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 sm:gap-6 gap-2 sm:h-[400px] h-[600px]">
+            {/* Left */}
+            <div className="grid sm:grid-rows-[70%_30%] grid-rows-1 sm:gap-4 gap-2">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5 }}
+                className="rounded-lg shadow-lg overflow-hidden border border-slate-700"
                 style={{
                   background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
                 }}
               >
-                <div>
+                <div className="h-full w-full relative">
                   <Image
-                    alt={project.title}
+                    alt={`${project.title} Thumbnail`}
                     src={project.image}
-                    width={1000}
-                    height={1000}
-                    className='rounded-lg  h-[10rem] sm:h-[10rem] w-[20rem] shadow-lg'
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className='w-full flex flex-col space-y-4 mt-2'>
-                  <div className='w-full font-bold'>
-                    <h3>{project.title}</h3>
-                  </div>
-                  <div className='w-full text-justify'>
-                    <p className='text-white text-xs w-full'>{project.description}</p>
-                  </div>
-                  <div className='w-full flex justify-end'>
+              </motion.div>
+
+              {/* Links */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5 }}
+                className="rounded-lg p-4 text-white text-center flex flex-col justify-center items-center space-y-2 border border-slate-700"
+                style={{
+                  background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
+                }}
+              >
+                <p className='sm:text-base text-[0.5rem]'>
+                  {project.link ? (
                     <a
                       href={project.link}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50'
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 underline"
                     >
-                      <span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]' />
-                      <span className='inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 text-xs font-medium text-white backdrop-blur-3xl'>
-                        See more
-                      </span>
+                      {project.link}
                     </a>
-                  </div>
-                </div>
-              </div>
-            ))}
+                  ) : (
+                    <span className="text-gray-400">No link provided</span>
+                  )}
+                </p>
+
+              </motion.div>
+            </div>
+
+            {/* Right */}
+            <div className="grid sm:grid-rows-[50%_50%] grid-rows-0 sm:gap-4 gap-2">
+              {/* Description */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5 }}
+                className="rounded-lg sm:px-8 sm:py-8 px-4 py-1 text-white text-center flex flex-col justify-center space-y-4 border border-slate-700"
+                style={{
+                  background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
+                }}
+              >
+                <h2 className="sm:text-2xl text-sm font-bold">{project.title}</h2>
+                <div className="w-full py-0.5  rounded-full bg-gradient-to-r from-buttonprimary to-buttonsecondary"></div>
+                <p className="sm:text-base text-xs">{project.description}</p>
+              </motion.div>
+
+              {/* Tech Icons */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5 }}
+                
+                className="w-full rounded-lg sm:p-4 p-2  text-white border border-slate-700 flex flex-row sm:gap-0 justify-center items-center space-x-4  sm:text-8xl text-5xl"
+                style={{
+                  background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
+                }}
+              >
+                {project.techIcons.length > 0 ? (
+                  project.techIcons.map((Icon, idx) => <React.Fragment key={idx}>{Icon}</React.Fragment>)
+                ) : (
+                  <p className="text-sm text-white">Technologies Used</p>
+                )}
+              </motion.div>
+            </div>
           </div>
         ))}
       </div>
+
     </section>
   );
 };

@@ -38,7 +38,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="relative w-full bg-transparent  font-sans md:px-10 "
       ref={containerRef}
     >
-      <div className='bg-gradient-to-r from-buttonprimary to-buttonsecondary relative w-full flex text-center items-center justify-center sm:p-2 p-1 rounded-full'>
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.5 }}
+        className='bg-gradient-to-r from-buttonprimary to-buttonsecondary relative w-full flex text-center items-center justify-center sm:p-2 p-1 rounded-full'
+      >
         <div className='bg-black rounded-full w-full px-4'>
           <h2 className='sm:text-3xl text-sm font-bold text-white w-full sm:py-10 py-4'>
               {/* Notable Accomplishments: Trainings, Certifications & Awards */}
@@ -46,7 +52,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           </h2>
 
         </div>
-      </div>
+      </motion.div>
       {/* <BackgroundGradient className="rounded-[22px] bg-black text-center w-full">
         <div className="flex justify-center items-center w-full px-2  sm:py-8 py-4">
           <h2 className="font-bold sm:text-3xl text-sm text-white max-w-full">
@@ -58,7 +64,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
       <div ref={ref} className="relative max-w-7xl mx-auto sm:pb-20 pb-4">
         {data.map((item, index) => (
-          <div
+          <motion.div
             key={index}
             className="flex justify-start pt-10 md:pt-40 md:gap-10"
           >
@@ -66,7 +72,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-tertiary border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
-              <div className="flex flex-col space-y-2">
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5 }}
+                className="flex flex-col space-y-2"
+              >
                 <h3 className="hidden md:block text-xl md:pl-20 sm:text-3xl font-bold text-white ">
                   {item.title}
                 </h3>
@@ -76,11 +88,17 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 <p className="hidden md:block text-xs md:pl-20 sm:text-sm  text-white ">
                   {item.year}
                 </p>
-              </div>
+              </motion.div>
               
             </div>
 
-            <div className="relative pl-20 pr-4 md:pl-0 w-full space-y-4">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5 }}
+              className="relative pl-20 pr-4 md:pl-0 w-full space-y-4"
+            >
               <h3 className="md:hidden block text-xl  text-left font-bold text-white">
                 {item.title}
               </h3>
@@ -91,8 +109,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 {item.year}
               </p>
               {item.content}{" "}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         ))}
         <div
           style={{

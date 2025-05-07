@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import { InfiniteMovingCards } from './ui/MovingCards'
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Skills = () => {
     const skills = [
@@ -104,7 +106,13 @@ const Skills = () => {
         },
       ];
   return (
-    <section id="skills" className='sm:px-10 px-5 '>
+    <motion.section 
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5 }}
+      id="skills" className='sm:px-10 px-5 '
+    >
         <InfiniteMovingCards
             items={skills}
             direction="right"
@@ -115,7 +123,7 @@ const Skills = () => {
             direction="left"
             speed="fast"
         />
-    </section>
+    </motion.section>
   )
 }
 

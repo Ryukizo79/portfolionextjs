@@ -1,13 +1,15 @@
+"use client"
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
-import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import {  FaUniversity } from 'react-icons/fa'
 import { BiSolidCertification } from "react-icons/bi";
 import { MdEmail } from 'react-icons/md'
+import Image from "next/image";
+import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <section id='about' className='sm:px-10 px-5'>
-        <div className=' py-[6rem]'>
+        <div className=' py-[7rem]'>
             <div>
             {/* md:-left-32 md:-top-20 md:tracking-wider*/}
                 <Spotlight className='sm:-top-40 sm:-left-10 left-10 -top-20  h-screen' fill='white'/>
@@ -23,11 +25,41 @@ const Hero = () => {
                     {/* <h2 className='uppercase tracking-widest text-sm text-center text-blue-100 max-w-80'>
                         Hi, nice to meet you
                     </h2> */}
-                    <TextGenerateEffect
-                        className='text-center sm:text-7xl text-4xl'
-                        words='Hi, My Name is Muhammad Dhiyaul Rakin'
-                    />
-                    <div className='font-bold w-full flex sm:flex-row flex-col sm:text-sm text-[0.6rem] text-white items-center justify-center sm:space-x-8 space-x-0 sm:space-y-0 space-y-2'>
+                    <motion.div 
+                      
+                        className="w-full flex sm:flex-row flex-col justify-center items-center sm:space-x-8 space-x-0 sm:space-y-0 space-y-8 mb-8"
+                    >
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            className="sm:w-[30%] w-full relative sm:h-80 h-64 sm:rounded-[3rem] rounded-[2rem] overflow-hidden"
+                        >
+                            <Image
+                            alt="image"
+                            src="/images/rakin.jpeg"
+                            fill
+                            className="object-cover "
+                            />
+                        </motion.div>
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 0.5 }}
+                            className="sm:w-[70%] w-full" 
+                        >
+                            <h1 className="text-left sm:text-5xl text-2xl text-white">
+                                Hi, My Name is <span className="text-tertiary font-bold sm:text-7xl text-4xl">Muhammad Dhiyaul Rakin Bin Zainuddin</span>
+                            </h1>
+                        </motion.div>
+                    </motion.div>
+
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 1.0 }}
+                        className='font-bold w-full flex sm:flex-row flex-col sm:text-sm text-[0.6rem] text-white items-center justify-center sm:space-x-8 space-x-0 sm:space-y-0 space-y-2'
+                    >
                         <div className=' flex flex-row items-center justify-center space-x-8'>
                             <div className=' flex flex-row items-center justify-center space-x-2'>
                                 <div>
@@ -57,10 +89,15 @@ const Hero = () => {
 
                         </div>
                         
-                    </div>
-                    <p className='sm:w-[80%] w-full text-center   sm:text-xl text-sm pt-4'>
+                    </motion.div>
+                    <motion.p 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 1.5 }}
+                        className='sm:w-[80%] w-full text-center   sm:text-xl text-sm pt-4'
+                    >
                         Dedicated and results-driven professional with a passion for software, data analytics, IoT, and programming. Focused on improving business productivity through innovative solutions and problem-solving.
-                    </p>
+                    </motion.p>
                     {/* <a href='#about'>
                         <MagicButton
                             title='Show my work'
