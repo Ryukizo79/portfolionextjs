@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'Fixome',
     description:
-      'Developed a dynamic and interactive Centralized platform that connects homeowners with trusted, top-rated home service providers in their area making it easy to discover, compare, and hire the best professionals for every home maintenance need.',
+      'Developed a dynamic and interactive centralized platform that connects homeowners with trusted, top-rated home service providers in their area making it easy to discover, compare, and hire the best professionals for every home maintenance need.',
     image: '/fixome.png',
     link: 'https://fixome.vercel.app/',
     techIcons: [
@@ -50,7 +50,7 @@ const projects = [
   {
     title: 'Internet of Things (IoT) Door Lock System',
     description:
-      'System includes NFC sensors, mobile application developed using MIT App Inventor and lock actuator consist of using Arduino UNO.',
+      'System includes NFC sensors, mobile application developed using MIT App Inventor connected to Google Firebase and lock actuator consist of using Arduino UNO.',
     image: '/iot.png',
     link: '',
     techIcons: [
