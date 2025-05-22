@@ -77,7 +77,7 @@ const Projects = () => {
       >
         <div className='bg-black rounded-full w-full px-4'>
           <h2 className='sm:text-3xl text-sm font-bold text-white w-full sm:py-10 py-4'>
-            Real-World Projects in Full-Stack Development and Problem Solving
+            Personal Projects: Turning Ideas Into Practical Solutions
           </h2>
 
         </div>
