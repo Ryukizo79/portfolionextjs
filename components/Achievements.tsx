@@ -5,6 +5,13 @@ import { motion } from "framer-motion";
 const Achievements = () => {
   const items = [
     {
+      title: "Google Cloud Skills Boost",
+      description:
+        "Completed hands-on labs in data engineering on Google Cloud Skills Boost, gaining practical experience in BigQuery, data pipelines, and cloud-based data processing.",
+      image: '/googledataengineer.png',
+      link: 'https://www.cloudskillsboost.google/public_profiles/bf2e4c53-1111-4203-9687-0bdfae000635',
+    },
+    {
       title: "AWS re/Start Graduate",
       description:
         "Gained hands-on experience with AWS core services like EC2, S3, VPC, and IAM, covering cloud fundamentals, cost management, scalability, and security best practices.",

@@ -118,7 +118,7 @@ const Projects = () => {
                   background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
                 }}
               >
-                <p className='sm:text-base text-[0.5rem]'>
+                <p className='sm:text-base text-[0.7rem]'>
                   {project.link ? (
                     <a
                       href={project.link}
