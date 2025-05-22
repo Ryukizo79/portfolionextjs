@@ -26,7 +26,7 @@ const projects = [
   {
     title: 'Portfolio',
     description:
-      'Developed a dynamic and interactive portfolio website using Next.js and Aceternity UI to showcase personal projects, skills, and professional experience.',
+      'Developed a dynamic and interactive portfolio website using Next.js and Framer Motion to showcase personal projects, skills, and professional experience.',
     image: '/portfolio web.png',
     link: 'https://rakinportfolio.vercel.app/',
     techIcons: [
