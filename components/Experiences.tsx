@@ -11,7 +11,7 @@ const Experiences = () => {
           content: (
             <div className="space-y-4 text-justify">
               <p className="text-white sm:text-lg text-sm font-bold">
-                KUL Slot Coordination (Project Manager)
+                KUL Slot Coordination (Business Analyst)
               </p>
               <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold  text-xs">
                 <div className="flex flex-row space-x-2">
@@ -56,7 +56,7 @@ const Experiences = () => {
               </div> */}
               {/*  */}
               <p className="text-white sm:text-lg text-sm font-bold">
-                Project Management (Business Analyst)
+                Project Management (Subject Matter Expert (SME))
               </p>
               <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold  text-xs">
                 <div className="flex flex-row space-x-2">
@@ -79,31 +79,19 @@ const Experiences = () => {
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Led cross-functional collaboration between stakeholders and vendors to align project objectives, define clear requirements, and ensure seamless issue resolution throughout the development lifecycle.
+                    Spearheaded requirements gathering and stakeholder alignment by translating complex business needs into clear functional specifications, ensuring successful delivery of digital transformation projects.
                   </p>
                 </div>
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Analyzed and integrated multiple data sources (real-time flight information, indoor wayfinding, promotions, SAP, and airport directories) to optimize business processes and enhance the passenger journey.
+                    Provided subject matter expertise across application architecture, backend integration, and system workflows includes conducting impact analysis, reviewing code logic, and validating technical implementations.
                   </p>
                 </div>
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Managed end-to-end development of multiple airport applications, including MYairports, Aviation Protection Security Service (APSS), and Malaysia Airports Group Procurement (MAGP), ensuring alignment with business needs and operational goals.
-                  </p>
-                </div>
-                <div className="flex flex-row space-x-4 ">
-                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
-                  <p className="text-white sm:text-base text-xs w-[95%]">
-                    Defined and optimized UI/UX strategies, working closely with designers and developers to enhance usability, accessibility, and engagement for passenger-facing applications.
-                  </p>
-                </div>
-                <div className="flex flex-row space-x-4 ">
-                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
-                  <p className="text-white sm:text-base text-xs w-[95%]">
-                    Delivered tailored digital solutions, translating business requirements into scalable applications to drive operational efficiency and improve user experience.
+                    Drove the development and deployment of enterprise airport applications (e.g., MYairports, MAGP and more), leveraging systems integration with real-time flight data, indoor wayfinding, SAP, promotions, and directory services to enhance operational performance and customer experience.
                   </p>
                 </div>
               </div>
