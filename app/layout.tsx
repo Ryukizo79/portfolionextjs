@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Rakin's Portfolio</title>
+        <title>Rakin Portfolio</title>
         <link rel="icon" type="image/png" href="/images/user.png" />
 
       </head>
