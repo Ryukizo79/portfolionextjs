@@ -1,15 +1,31 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import { SiIpfs, SiNextdotjs, SiTypescript } from 'react-icons/si';
+import { SiIpfs, SiNextdotjs, SiRender, SiSpringboot, SiTypescript } from 'react-icons/si';
 import { TbBrandFramerMotion, TbBrandReact } from 'react-icons/tb';
 import { FaEthereum } from 'react-icons/fa';
-import { RiTailwindCssFill } from 'react-icons/ri';
-import { IoLogoFirebase } from 'react-icons/io5';
+import { RiSupabaseFill, RiTailwindCssFill } from 'react-icons/ri';
+import { IoLogoFirebase, IoLogoVercel } from 'react-icons/io5';
 import { DiMitlicence } from 'react-icons/di';
 import { motion } from "framer-motion";
+import { BiLogoPostgresql } from 'react-icons/bi';
 
 const projects = [
+  {
+    title: 'DynaForm',
+    description:
+      'Developed a dynamic and interactive form builder with real-time field customization, validation, and seamless user experience for flexible form creation and management.',
+    image: '/dynaform.png',
+    link: 'https://dynaform.vercel.app/',
+    techIcons: [
+      <SiNextdotjs key="nextjs" className="text-black-100 bg-white sm:p-4 p-1 sm:rounded-xl rounded-lg" />, 
+      <IoLogoVercel key="vercel" className="text-white bg-black sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
+      <SiSpringboot key="springboot" className="text-white bg-lime-300 sm:p-4 p-1 sm:rounded-xl rounded-lg"/>,
+      <SiRender key="render" className="text-white bg-black sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
+      <BiLogoPostgresql key="postgres" className="text-white bg-sky-600 sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
+      <RiSupabaseFill key="supabase" className="text-white bg-green-600 sm:p-4 p-1 sm:rounded-xl rounded-lg" />
+    ],
+  },
   {
     title: 'Fixome',
     description:
@@ -82,7 +98,7 @@ const Projects = () => {
 
         </div>
       </motion.div>
-      <div className="w-full flex flex-col items-center space-y-20 px-4">
+      <div className="w-full flex flex-col items-center gap-28 px-4">
         {projects.map((project, index) => (
           <div key={index} className="w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 sm:gap-6 gap-2 sm:h-[400px] h-[600px]">
             {/* Left */}
@@ -161,7 +177,7 @@ const Projects = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5 }}
                 
-                className="w-full rounded-lg sm:p-4 p-2  text-white border border-slate-700 flex flex-row sm:gap-0 justify-center items-center space-x-4  sm:text-8xl text-5xl"
+                className="w-full rounded-lg sm:p-4 p-2 text-white border border-slate-700 flex flex-wrap justify-center items-center gap-4 sm:text-7xl text-6xl"
                 style={{
                   background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
                 }}
