@@ -11,81 +11,7 @@ const Experiences = () => {
           content: (
             <div className="space-y-4 text-justify">
               <p className="text-white sm:text-lg text-sm font-bold">
-                KUL Slot Coordination (Business Analyst)
-              </p>
-              <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold  text-xs">
-                <div className="flex flex-row space-x-2">
-                  <div className="w-fit rounded-full bg-emerald-400 px-4 py-2">
-                    Project Management
-                  </div>
-                </div>
-                <div className="flex flex-row space-x-2">
-                  <div className="w-fit rounded-full bg-amber-400 px-4 py-2">
-                    Business Analyst
-                  </div>
-                </div>
-                <div className="flex flex-row space-x-2">
-                  <div className="w-fit rounded-full bg-violet-400 px-4 py-2">
-                    Problem Solving
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col space-y-4">
-                <div className="flex flex-row space-x-4 ">
-                  <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
-                  <p className="text-white sm:text-base text-xs w-[95%]">
-                    Optimized the airline parking bay booking process by enhancing communication and resource allocation between the Parking Bay and Flight Operations teams.
-                  </p>
-                </div>
-                <div className="flex flex-row space-x-4 ">
-                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
-                  <p className="text-white sm:text-base text-xs w-[95%]">
-                    Led the implementation of a cost-effective solution using Google AppSheet, streamlining communication and record-keeping, eliminating reliance on email-based processes.
-                  </p>
-                </div>
-              </div>
-              <p className="text-white sm:text-lg text-sm font-bold">
-                Project Management (Subject Matter Expert (SME))
-              </p>
-              <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold  text-xs">
-                <div className="flex flex-row space-x-2">
-                  <div className="w-fit rounded-full bg-emerald-400 px-4 py-2">
-                    Project Management
-                  </div>
-                </div>
-                <div className="flex flex-row space-x-2">
-                  <div className="w-fit rounded-full bg-amber-400 px-4 py-2">
-                    Business Analyst
-                  </div>
-                </div>
-                <div className="flex flex-row space-x-2">
-                  <div className="w-fit rounded-full bg-violet-400 px-4 py-2">
-                    Problem Solving
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col space-y-4">
-                <div className="flex flex-row space-x-4 ">
-                  <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
-                  <p className="text-white sm:text-base text-xs w-[95%]">
-                    Spearheaded requirements gathering and stakeholder alignment by translating complex business needs into clear functional specifications, ensuring successful delivery of digital transformation projects.
-                  </p>
-                </div>
-                <div className="flex flex-row space-x-4 ">
-                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
-                  <p className="text-white sm:text-base text-xs w-[95%]">
-                    Provided subject matter expertise across application architecture, backend integration, and system workflows includes conducting impact analysis, reviewing code logic, and validating technical implementations.
-                  </p>
-                </div>
-                <div className="flex flex-row space-x-4 ">
-                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
-                  <p className="text-white sm:text-base text-xs w-[95%]">
-                    Drove the development and deployment of enterprise airport applications (e.g., MYairports, MAGP and more), leveraging systems integration with real-time flight data, indoor wayfinding, SAP, promotions, and directory services to enhance operational performance and customer experience.
-                  </p>
-                </div>
-              </div>
-              <p className="text-white sm:text-lg text-sm font-bold">
-                Terminal Inspection Checklist
+                TTerminal Inspection Checklist (Fullstack Developer)
               </p>
               <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold text-xs">
                 <div className="flex flex-row space-x-2">
@@ -114,19 +40,25 @@ const Experiences = () => {
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Developed a digital solution with Next.js, Spring Boot, and SaaS integration to streamline processes, enhance decision-making, optimize spare parts purchasing, and predict maintenance issues.
+                    Built a full-stack inspection app using Next.js (SSR, API routes) and Spring Boot (RESTful APIs, JWT) with MySQL to replace manual paper workflows (0% paper usage).
                   </p>
                 </div>
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Eliminated manual, paper-based processes which reduces to 0% usage of paper.
+                    Integrated with a SaaS platform (Freshworks) to auto-generate problem tickets and route them to relevant departments for seamless maintenance workflows.
                   </p>
                 </div>
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Designed, developed, and deployed a cloud-based app using Figma, Azure, and CI/CD pipelines with Azure DevOps for automation.
+                    Led end-to-end development, from Figma UI design to Azure deployment with CI/CD via Azure DevOps.
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Improved efficiency and scalability with clean architecture, responsive design, and secure API integration.
                   </p>
                 </div>
               </div>
@@ -142,7 +74,7 @@ const Experiences = () => {
               </div> */}
               {/*  */}
               <p className="text-white sm:text-lg text-sm font-bold">
-                Malaysia Airports Rate Online (MyAeRO)
+                Malaysia Airports Rate Online (Fullstack Developer)
               </p>
               <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold text-xs">
                 <div className="flex flex-row space-x-2">
@@ -167,19 +99,25 @@ const Experiences = () => {
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Developed a portal using Angular (frontend) and Spring Boot (Java backend) to provide a centralize work rate data across multiple years for airport operations, enabling staff to streamline budgeting processes.
+                    Developed a centralized budgeting portal using Angular (component-based, reactive forms, two-way binding) for a dynamic and intuitive UI.
                   </p>
                 </div>
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Served as a centralized hub for work rate data, enabling predictive analysis for future work rates.
+                    Built secure RESTful APIs with Spring Boot, using layered architecture, DTOs, and JWT authentication connected to MSSQL.
                   </p>
                 </div>
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Managed the end-to-end design (Figma), development and deployment of application and virtual machine setups, incorporating Apache Tomcat and Nginx to optimize server configuration and performance.
+                    Enabled predictive analysis and streamlined planning by consolidating multi-year work rate data.
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Led end-to-end delivery, from Figma UI design to VM deployment, optimizing performance with Tomcat and Nginx.
                   </p>
                 </div>
               </div>
@@ -220,19 +158,25 @@ const Experiences = () => {
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Leveraged a no-code solution using Google AppSheet to digitalize and automate the manual, paper-based process for reporting fire vehicle damage notifications.
+                    Spearheaded a mobile app using Google AppSheet to digitalize fire vehicle damage reporting, eliminating paper-based workflows.
                   </p>
                 </div>
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Automated data analytics using Google Looker Studio to create dashboards for decision-making and predicting potential faults.
+                    Automated data capture and alerts via built-in logic and Google Sheets integration, streamlining departmental coordination.
                   </p>
                 </div>
                 <div className="flex flex-row space-x-4 ">
                   <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
                   <p className="text-white sm:text-base text-xs w-[95%]">
-                    Eliminated manual, paper-based processes, reducing paper usage to 0% and improving workflows with real-time notifications.
+                    Designed interactive dashboards in Google Looker Studio for real-time insights and predictive maintenance tracking.
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Achieved 0% paper usage, improved reporting speed, and enhanced fleet visibility across departments.
                   </p>
                 </div>
               </div>
@@ -247,6 +191,53 @@ const Experiences = () => {
                 
               </div> */}
               {/*  */}
+              <p className="text-white sm:text-lg text-sm font-bold">
+                MYairports (Subject Matter Expert)
+              </p>
+              <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold  text-xs">
+                <div className="flex flex-row space-x-2">
+                   <div className="w-fit rounded-full bg-emerald-400 px-4 py-2">
+                    Project Management
+                  </div>
+                  <div className="w-fit rounded-full bg-amber-400 px-4 py-2">
+                    Business Analyst
+                  </div>
+                </div>
+                <div className="flex flex-row space-x-2">
+                  <div className="w-fit rounded-full bg-sky-400 px-4 py-2">
+                    React Native
+                  </div>
+                  <div className="w-fit rounded-full bg-green-400 px-4 py-2">
+                    Spring Boot
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col space-y-4">
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Collaborated with vendor developers to architect and validate a cross-platform solution using React Native (frontend) and Spring Boot (backend APIs).
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Contributed to technical decision-making on state management, API contract design, and authentication flows for scalable and maintainable implementation.
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Led integration of third-party SDKs including chatbot, smart parking, and indoor map wayfinding, ensuring performance, security, and business alignment.
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-4 ">
+                  <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+                  <p className="text-white sm:text-base text-xs w-[95%]">
+                    Bridged airport operations and engineering teams by translating domain requirements into technical tasks, supporting agile delivery and rapid iteration.
+                  </p>
+                </div>
+              </div>
              
             </div>
             
