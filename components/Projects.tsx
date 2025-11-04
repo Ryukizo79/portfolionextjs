@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import { SiIpfs, SiNextdotjs, SiRender, SiSpringboot, SiTypescript } from 'react-icons/si';
+import { SiGooglegemini, SiIpfs, SiNextdotjs, SiRender, SiSpringboot, SiTypescript } from 'react-icons/si';
 import { TbBrandFramerMotion, TbBrandReact } from 'react-icons/tb';
 import { FaEthereum } from 'react-icons/fa';
 import { RiSupabaseFill, RiTailwindCssFill } from 'react-icons/ri';
@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'DynaForm',
     description:
-      'Developed a dynamic and interactive form builder with real-time field customization, validation, and seamless user experience for flexible form creation and management.',
+      'Developed a dynamic, AI-integrated form builder using the Gemini API, enabling real-time field customization, validation, and a seamless user experience for flexible form creation and management.',
     image: '/dynaform.png',
     link: 'https://dynaform.vercel.app/',
     techIcons: [
@@ -23,7 +23,8 @@ const projects = [
       <SiSpringboot key="springboot" className="text-white bg-lime-300 sm:p-4 p-1 sm:rounded-xl rounded-lg"/>,
       <SiRender key="render" className="text-white bg-black sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
       <BiLogoPostgresql key="postgres" className="text-white bg-sky-600 sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
-      <RiSupabaseFill key="supabase" className="text-white bg-green-600 sm:p-4 p-1 sm:rounded-xl rounded-lg" />
+      <RiSupabaseFill key="supabase" className="text-white bg-green-600 sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
+      <SiGooglegemini key="gemini" className="text-black-100 bg-white sm:p-4 p-1 sm:rounded-xl rounded-lg" />
     ],
   },
   {
@@ -46,7 +47,7 @@ const projects = [
     image: '/portfolio web.png',
     link: 'https://rakinportfolio.vercel.app/',
     techIcons: [
-      <SiNextdotjs key="nextjs" className="text-black-100 bg-white sm:p-4 p-2 rounded-xl" />, 
+      <SiNextdotjs key="nextjs" className="text-black-100 bg-white sm:p-4 p-2 rounded-lg" />, 
       <TbBrandFramerMotion key="framer" className="text-black-100 bg-yellow-300 sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
       <RiTailwindCssFill key="tailwind" className="text-white bg-buttonsecondary sm:p-4 p-1 sm:rounded-xl rounded-lg"/>
     ],
@@ -118,7 +119,7 @@ const Projects = () => {
                     alt={`${project.title} Thumbnail`}
                     src={project.image}
                     fill
-                    className="object-cover"
+                    className="object-fit"
                   />
                 </div>
               </motion.div>
@@ -134,7 +135,7 @@ const Projects = () => {
                   background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
                 }}
               >
-                <p className='sm:text-base text-[0.7rem]'>
+                <p className='sm:text-base text-xs'>
                   {project.link ? (
                     <a
                       href={project.link}
@@ -176,18 +177,34 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5 }}
-                
-                className="w-full rounded-lg sm:p-4 p-2 text-white border border-slate-700 flex flex-wrap justify-center items-center gap-4 sm:text-7xl text-6xl"
+                className="w-full rounded-lg sm:p-4 p-2 text-white border border-slate-700 flex flex-col justify-center items-center gap-2"
                 style={{
                   background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
                 }}
               >
                 {project.techIcons.length > 0 ? (
-                  project.techIcons.map((Icon, idx) => <React.Fragment key={idx}>{Icon}</React.Fragment>)
+                  <>
+                    {/* First Row - Max 4 icons */}
+                    <div className="flex justify-center flex-wrap gap-4 sm:text-7xl text-6xl">
+                      {project.techIcons.slice(0, 4).map((Icon, idx) => (
+                        <React.Fragment key={idx}>{Icon}</React.Fragment>
+                      ))}
+                    </div>
+
+                    {/* Second Row - Remaining icons */}
+                    {project.techIcons.length > 4 && (
+                      <div className="flex justify-center flex-wrap gap-4 sm:text-7xl text-6xl mt-2">
+                        {project.techIcons.slice(4).map((Icon, idx) => (
+                          <React.Fragment key={idx}>{Icon}</React.Fragment>
+                        ))}
+                      </div>
+                    )}
+                  </>
                 ) : (
                   <p className="text-sm text-white">Technologies Used</p>
                 )}
               </motion.div>
+
             </div>
           </div>
         ))}

@@ -11,7 +11,7 @@ const Experiences = () => {
           content: (
             <div className="space-y-4 text-justify">
               <p className="text-white sm:text-lg text-sm font-bold">
-                TTerminal Inspection Checklist (Fullstack Developer)
+                Terminal Inspection Checklist (Fullstack Developer)
               </p>
               <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 w-full font-bold text-xs">
                 <div className="flex flex-row space-x-2">
