@@ -103,7 +103,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index}
             className={`w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 sm:gap-6 gap-2 
-              sm:h-auto h-auto `}
+              sm:h-auto h-[600px] `}
           >
             {/* Left */}
             <div className="grid sm:grid-rows-[70%_30%] grid-rows-1 sm:gap-4 gap-2">
@@ -189,7 +189,7 @@ const Projects = () => {
                   <>
                     {/* First Row - Max 4 icons */}
                     <div className="flex justify-center flex-wrap gap-4 sm:text-7xl text-4xl">
-                      {project.techIcons.slice(0, 5).map((Icon, idx) => {
+                      {project.techIcons.slice(0, 4).map((Icon, idx) => {
                         const name =
                           Icon.key && typeof Icon.key === "string"
                             ? Icon.key.charAt(0).toUpperCase() + Icon.key.slice(1)
@@ -206,7 +206,7 @@ const Projects = () => {
                     {/* Second Row - Remaining icons */}
                     {project.techIcons.length > 4 && (
                       <div className="flex justify-center flex-wrap gap-4 sm:text-7xl text-4xl mt-4">
-                        {project.techIcons.slice(5).map((Icon, idx) => {
+                        {project.techIcons.slice(4).map((Icon, idx) => {
                           const name =
                             Icon.key && typeof Icon.key === "string"
                               ? Icon.key.charAt(0).toUpperCase() + Icon.key.slice(1)
