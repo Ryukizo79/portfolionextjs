@@ -22,7 +22,7 @@ const projects = [
       <IoLogoVercel key="vercel" className="text-white bg-black sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
       <SiSpringboot key="springboot" className="text-white bg-lime-300 sm:p-4 p-1 sm:rounded-xl rounded-lg"/>,
       <SiRender key="render" className="text-white bg-black sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
-      <BiLogoPostgresql key="postgres" className="text-white bg-sky-600 sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
+      <BiLogoPostgresql key="postgresSQL" className="text-white bg-sky-600 sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
       <RiSupabaseFill key="supabase" className="text-white bg-green-600 sm:p-4 p-1 sm:rounded-xl rounded-lg" />,
       <SiGooglegemini key="gemini" className="text-black-100 bg-white sm:p-4 p-1 sm:rounded-xl rounded-lg" />
     ],
@@ -99,9 +99,12 @@ const Projects = () => {
 
         </div>
       </motion.div>
-      <div className="w-full flex flex-col items-center gap-28 px-4">
+      <div className="w-full flex flex-col items-center px-4 space-y-28">
         {projects.map((project, index) => (
-          <div key={index} className="w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 sm:gap-6 gap-2 sm:h-[400px] h-[600px]">
+          <div key={index}
+            className={`w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 sm:gap-6 gap-2 
+              sm:h-auto h-auto `}
+          >
             {/* Left */}
             <div className="grid sm:grid-rows-[70%_30%] grid-rows-1 sm:gap-4 gap-2">
               <motion.div
@@ -161,7 +164,7 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5 }}
-                className="rounded-lg sm:px-8 sm:py-8 px-4 py-1 text-white text-center flex flex-col justify-center space-y-4 border border-slate-700"
+                className="rounded-lg sm:px-8 sm:py-8 px-4 py-4 text-white text-center flex flex-col justify-center sm:gap-4 gap-2 border border-slate-700"
                 style={{
                   background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
                 }}
@@ -177,7 +180,7 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5 }}
-                className="w-full rounded-lg sm:p-4 p-2 text-white border border-slate-700 flex flex-col justify-center items-center gap-2"
+                className="w-full rounded-lg sm:p-8 p-4 text-white border border-slate-700 flex flex-col justify-center items-center gap-2"
                 style={{
                   background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
                 }}
@@ -185,18 +188,36 @@ const Projects = () => {
                 {project.techIcons.length > 0 ? (
                   <>
                     {/* First Row - Max 4 icons */}
-                    <div className="flex justify-center flex-wrap gap-4 sm:text-7xl text-6xl">
-                      {project.techIcons.slice(0, 4).map((Icon, idx) => (
-                        <React.Fragment key={idx}>{Icon}</React.Fragment>
-                      ))}
+                    <div className="flex justify-center flex-wrap gap-4 sm:text-7xl text-4xl">
+                      {project.techIcons.slice(0, 5).map((Icon, idx) => {
+                        const name =
+                          Icon.key && typeof Icon.key === "string"
+                            ? Icon.key.charAt(0).toUpperCase() + Icon.key.slice(1)
+                            : "Tech";
+                        return (
+                          <div key={idx} className="flex flex-col items-center">
+                            {Icon}
+                            <p className="text-xs sm:text-sm mt-1 text-center">{name}</p>
+                          </div>
+                        );
+                      })}
                     </div>
 
                     {/* Second Row - Remaining icons */}
                     {project.techIcons.length > 4 && (
-                      <div className="flex justify-center flex-wrap gap-4 sm:text-7xl text-6xl mt-2">
-                        {project.techIcons.slice(4).map((Icon, idx) => (
-                          <React.Fragment key={idx}>{Icon}</React.Fragment>
-                        ))}
+                      <div className="flex justify-center flex-wrap gap-4 sm:text-7xl text-4xl mt-4">
+                        {project.techIcons.slice(5).map((Icon, idx) => {
+                          const name =
+                            Icon.key && typeof Icon.key === "string"
+                              ? Icon.key.charAt(0).toUpperCase() + Icon.key.slice(1)
+                              : "Tech";
+                          return (
+                            <div key={idx} className="flex flex-col items-center">
+                              {Icon}
+                              <p className="text-xs sm:text-sm mt-1 text-center">{name}</p>
+                            </div>
+                          );
+                        })}
                       </div>
                     )}
                   </>
@@ -204,6 +225,7 @@ const Projects = () => {
                   <p className="text-sm text-white">Technologies Used</p>
                 )}
               </motion.div>
+
 
             </div>
           </div>
