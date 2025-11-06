@@ -9,7 +9,7 @@ const Achievements = () => {
       description:
         "Validated skills in secure software development, threat mitigation, and application vulnerability management based on OWASP and industry security best practices.",
       image: '/csap.png',
-      link: 'https://www.linkedin.com/in/dhiyaul-rakin-814097200/',
+      link: 'https://www.linkedin.com/in/dhiyaul-rakin-814097200/overlay/1762325216554/single-media-viewer/?profileId=ACoAADNFDNABtdtMFRIESx_RI5jCZ0A9pfRFQMA',
     },
     {
       title: "Google Cloud Skills Boost",
