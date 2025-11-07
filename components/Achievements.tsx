@@ -39,6 +39,13 @@ const Achievements = () => {
       image: '/html cert.png',
       link: 'https://www.linkedin.com/feed/update/urn:li:activity:7148888671570583554/',
     },
+    {
+      title: "Graduate Engineer",
+      description:
+        "Registered as a Graduate Engineer with the Board of Engineers Malaysia (BEM), in compliance with the requirements of the Registration of Engineers Act 1967.",
+      image: '/bem.png',
+      link: 'https://engineer.org.my/public/Engineers/Index/240554',
+    },
   ];
 
   return (
@@ -65,29 +72,30 @@ const Achievements = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, delay: rowIndex * 0.1 }}
-            className="flex flex-col justify-center items-center w-full sm:w-[30%] rounded-2xl border border-b-0 border-slate-700 sm:px-8 px-4 py-6"
+            className="flex flex-col  items-center w-full sm:w-[30%] rounded-2xl border border-b-0 border-slate-700 "
             style={{
               background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900))',
             }}
           >
-            <div>
+            <div className='w-full'>
               <Image
                 alt={item.title}
                 src={item.image}
                 width={1000}
                 height={1000}
-                className="rounded-lg h-[10rem] sm:h-[10rem] w-[20rem] shadow-lg"
+                className="rounded-t-2xl h-[10rem] sm:h-[10rem] w-full shadow-lg"
               />
             </div>
-            <div className="w-full flex flex-col space-y-4 mt-2">
+            <div className="w-full flex flex-col space-y-4">
               <div className="w-full font-bold flex flex-col space-y-2">
-                <h3 className="text-white">{item.title}</h3>
-                <div className="w-full py-0.5 rounded-full bg-gradient-to-r from-buttonprimary to-buttonsecondary"></div>
+                <div className="w-full py-0.5  bg-gradient-to-r from-buttonprimary to-buttonsecondary"></div>
+                <h3 className="text-white px-4 text-center">{item.title}</h3>
+                <div className="w-full py-0.5  bg-gradient-to-r from-buttonprimary to-buttonsecondary"></div>
               </div>
-              <div className="w-full text-justify">
+              <div className="w-full text-justify px-4">
                 <p className="text-white text-xs w-full">{item.description}</p>
               </div>
-              <div className="w-full flex justify-end">
+              <div className="w-full flex justify-end px-4 py-4">
                 <motion.a
                   whileHover={{
                     y: -5,
