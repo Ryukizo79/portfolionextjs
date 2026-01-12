@@ -7,9 +7,17 @@ import {
 } from "framer-motion";
 import ProjectModal from "@/components/modal/ProjectModal";
 
+type ProjectModalData = {
+  title: string;
+  useCase: React.ReactNode[];
+  solution: React.ReactNode[];
+  techStack: React.ReactNode[];
+  skills: React.ReactNode[];
+};
+
 const Experiences = () => {
   const [open, setOpen] = useState(false);
-  const [activeModal, setActiveModal] = useState<any>(null);
+  const [activeModal, setActiveModal] = useState<ProjectModalData | null>(null);
   const modalContent = {
     terminalInspection: {
       title: "Terminal Inspection Checklist",
