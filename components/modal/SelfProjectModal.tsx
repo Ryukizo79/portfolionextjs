@@ -113,7 +113,7 @@ export default function SelfProjectModal({ open, data, onClose }: SelfProjectMod
             animate={{ scale: 1, y: 0 }}
             exit={{ scale: 0.9, y: 30 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            className="max-w-5xl w-full bg-slate-900 text-white rounded-xl p-6 space-y-4 border border-slate-700 sm:max-h-[500px] max-h-[700px] overflow-hidden"
+            className="w-[95%] bg-slate-900 text-white rounded-xl p-6 space-y-4 border border-slate-700 sm:max-h-[500px] max-h-[700px] overflow-hidden"
           >
             {/* Header */}
             <div className="flex justify-between items-center">
