@@ -18,6 +18,19 @@ type ProjectModalData = {
 const Experiences = () => {
   const [open, setOpen] = useState(false);
   const [activeModal, setActiveModal] = useState<ProjectModalData | null>(null);
+  const colorMap: Record<string, string> = {
+    cyan: "text-cyan-500 bg-cyan-500/10 border-cyan-500/30",
+    green: "text-green-500 bg-green-500/10 border-green-500/30",
+    yellow: "text-yellow-500 bg-yellow-500/10 border-yellow-500/30",
+    blue: "text-blue-500 bg-blue-500/10 border-blue-500/30",
+    red: "text-red-500 bg-red-500/10 border-red-500/30",
+    violet: "text-violet-500 bg-violet-500/10 border-violet-500/30",
+    pink: "text-pink-500 bg-pink-500/10 border-pink-500/30",
+    amber: "text-amber-500 bg-amber-500/10 border-amber-500/30",
+    fuchsia: "text-fuchsia-500 bg-fuchsia-500/10 border-fuchsia-500/30",
+    orange: "text-orange-500 bg-orange-500/10 border-orange-500/30",
+  };
+
   const modalContent = {
     terminalInspection: {
       title: "Terminal Inspection Checklist",
@@ -82,7 +95,7 @@ const Experiences = () => {
           ].map((skill, idx) => (
             <span
               key={idx}
-              className="inline-block bg-violet-500/20  rounded-full px-3 py-1 text-xs"
+              className="inline-block bg-violet-500/20  rounded-full px-3 py-1 text-xs font-medium"
             >
               {skill}
             </span>
@@ -152,7 +165,7 @@ const Experiences = () => {
           ].map((skill, idx) => (
             <span
               key={idx}
-              className="inline-block bg-violet-500/20 rounded-full px-3 py-1 text-xs"
+              className="inline-block bg-violet-500/20 rounded-full px-3 py-1 text-xs font-medium"
             >
               {skill}
             </span>
@@ -220,7 +233,7 @@ const Experiences = () => {
           ].map((skill, idx) => (
             <span
               key={idx}
-              className="inline-block bg-violet-500/20 rounded-full px-3 py-1 text-xs"
+              className="inline-block bg-violet-500/20 rounded-full px-3 py-1 text-xs font-medium"
             >
               {skill}
             </span>
@@ -256,7 +269,7 @@ const Experiences = () => {
             ].map((tech, idx) => (
               <div
                 key={idx}
-                className={`w-fit rounded-full text-${tech.color}-500 bg-${tech.color}-500/10 border border-${tech.color}-500/30 px-4 py-2`}
+                className={`w-fit rounded-full ${colorMap[tech.color]}  border  px-4 py-2`}
               >
                 {tech.name}
               </div>
@@ -331,7 +344,7 @@ const Experiences = () => {
             ].map((tech, idx) => (
               <div
                 key={idx}
-                className={`w-fit rounded-full text-${tech.color}-500 bg-${tech.color}-500/10 border border-${tech.color}-500/30 px-4 py-2`}
+                className={`w-fit rounded-full ${colorMap[tech.color]}  border  px-4 py-2`}
               >
                 {tech.name}
               </div>
@@ -402,7 +415,7 @@ const Experiences = () => {
             ].map((tech, idx) => (
               <div
                 key={idx}
-                className={`w-fit rounded-full   text-${tech.color}-500 bg-${tech.color}-500/10 border border-${tech.color}-500/30 px-4 py-2`}
+                className={`w-fit rounded-full   ${colorMap[tech.color]}  border  px-4 py-2`}
               >
                 {tech.name}
               </div>
@@ -475,7 +488,7 @@ const Experiences = () => {
             ].map((tech, idx) => (
               <div
                 key={idx}
-                className={`w-fit rounded-full text-${tech.color}-500 bg-${tech.color}-500/10 border border-${tech.color}-500/30 px-4 py-2`}
+                className={`w-fit rounded-full ${colorMap[tech.color]}  border  px-4 py-2`}
               >
                 {tech.name}
               </div>
@@ -492,12 +505,6 @@ const Experiences = () => {
               <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
               <p className="text-white sm:text-base text-xs w-[95%]">
                 Led integration of third-party SDKs (chatbot, smart parking, indoor wayfinding), ensuring performance, security, and scalability.
-              </p>
-            </div>
-            <div className="flex flex-row space-x-4 ">
-              <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
-              <p className="text-white sm:text-base text-xs w-[95%]">
-                Led integration of third-party SDKs including chatbot, smart parking, and indoor map wayfinding, ensuring performance, security, and business alignment.
               </p>
             </div>
             <div className="flex flex-row space-x-4 ">
@@ -529,7 +536,7 @@ const Experiences = () => {
             ].map((tech, idx) => (
               <div
                 key={idx}
-                className={`w-fit rounded-full text-${tech.color}-500 bg-${tech.color}-500/10 border border-${tech.color}-500/30 px-4 py-2`}
+                className={`w-fit rounded-full ${colorMap[tech.color]}  border  px-4 py-2`}
               >
                 {tech.name}
               </div>
@@ -592,7 +599,7 @@ const Experiences = () => {
             ].map((tech, idx) => (
               <div
                 key={idx}
-                className={`w-fit rounded-full text-${tech.color}-500 bg-${tech.color}-500/10 border border-${tech.color}-500/30 px-4 py-2`}
+                className={`w-fit rounded-full ${colorMap[tech.color]}  border  px-4 py-2`}
               >
                 {tech.name}
               </div>
