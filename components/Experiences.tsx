@@ -474,7 +474,7 @@ const Experiences = () => {
           </div> */}
           {/*  */}
           <p className="text-white sm:text-lg text-sm font-bold">
-            MYairports (Project Technical Lead)
+            MYairports (Project Technical Lead/Analyst)
           </p>
           <div
             className="flex flex-wrap gap-2 w-full font-bold text-xs"
@@ -516,7 +516,7 @@ const Experiences = () => {
           </div>
           {/*  */}
           <p className="text-white sm:text-lg text-sm font-bold">
-            Aircraft Protection Security Services (Project Technical Lead)
+            Aircraft Protection Security Services (Project Technical Lead/Analyst)
           </p>
           <div
             className="flex flex-wrap gap-2 w-full font-bold text-xs"
@@ -558,7 +558,7 @@ const Experiences = () => {
           </div>
           {/*  */}
           <p className="text-white sm:text-lg text-sm font-bold">
-            Operational Information System (Project Technical Lead)
+            Operational Information System (Project Technical Lead/Analyst)
           </p>
           <div
             className="flex flex-wrap gap-2 w-full font-bold text-xs"
