@@ -255,7 +255,7 @@ const Experiences = () => {
       content: (
         <div className="space-y-4 text-justify">
           <p className="text-white sm:text-lg text-sm font-bold">
-            Terminal Inspection Checklist (Fullstack Developer)
+            Terminal Inspection Checklist (Fullstack Software Engineer)
           </p>
           <div
             className="flex flex-wrap gap-2 w-full font-bold text-xs"
@@ -331,7 +331,7 @@ const Experiences = () => {
           </div> */}
           {/*  */}
           <p className="text-white sm:text-lg text-sm font-bold">
-            Malaysia Airports Rate Online (Fullstack Developer)
+            Malaysia Airports Rate Online (Fullstack Software Engineer)
           </p>
           <div
             className="flex flex-wrap gap-2 w-full font-bold text-xs"
@@ -474,13 +474,13 @@ const Experiences = () => {
           </div> */}
           {/*  */}
           <p className="text-white sm:text-lg text-sm font-bold">
-            MYairports (Subject Matter Expert)
+            MYairports (Project Technical Lead)
           </p>
           <div
             className="flex flex-wrap gap-2 w-full font-bold text-xs"
           >
             {[
-              { name: "Project Management", color: "pink" },
+              { name: "Technical Analyst", color: "pink" },
               { name: "Business Analyst", color: "yellow" },
               { name: "React Native", color: "cyan" },
               { name: "Spring Boot", color: "green" },
@@ -498,24 +498,110 @@ const Experiences = () => {
             <div className="flex flex-row space-x-4 ">
               <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
               <p className="text-white sm:text-base text-xs w-[95%]">
-                Collaborated with vendors to design a cross-platform solution using React Native and Spring Boot, contributing to system architecture and API contracts.
+                Led technical analysis and solution design for a cross-platform mobile application using React Native, Spring Boot and Drupal CMS defining system architecture, API integration and content updates.
               </p>
             </div>
             <div className="flex flex-row space-x-4 ">
               <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
               <p className="text-white sm:text-base text-xs w-[95%]">
-                Led integration of third-party SDKs (chatbot, smart parking, indoor wayfinding), ensuring performance, security, and scalability.
+                Integrated third-party SDKs (chatbot, smart parking, indoor wayfinding), ensuring performance, security, and scalability.
               </p>
             </div>
             <div className="flex flex-row space-x-4 ">
               <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
               <p className="text-white sm:text-base text-xs w-[95%]">
-                Bridged business and engineering teams by translating operational requirements into clear, actionable technical tasks.
+                Acted as the primary bridge between business and engineering teams, translating operational requirements into clear, actionable technical deliverables.
+              </p>
+            </div>
+          </div>
+          {/*  */}
+          <p className="text-white sm:text-lg text-sm font-bold">
+            Aircraft Protection Security Services (Project Technical Lead)
+          </p>
+          <div
+            className="flex flex-wrap gap-2 w-full font-bold text-xs"
+          >
+            {[
+              { name: "Technical Analyst", color: "pink" },
+              { name: "Business Analyst", color: "yellow" },
+              { name: "Next.js", color: "cyan" },
+              { name: "Spring Boot", color: "green" },
+              { name: "Data Power", color: "blue" },
+            ].map((tech, idx) => (
+              <div
+                key={idx}
+                className={`w-fit rounded-full ${colorMap[tech.color]}  border  px-4 py-2`}
+              >
+                {tech.name}
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col space-y-4">
+            <div className="flex flex-row space-x-4 ">
+              <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
+              <p className="text-white sm:text-base text-xs w-[95%]">
+                Led business and technical requirements to replace an obsolete legacy system with a modern sales order solution using Next.js with Spring Boot which integrated with SAP via DataPower.
+              </p>
+            </div>
+            <div className="flex flex-row space-x-4 ">
+              <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+              <p className="text-white sm:text-base text-xs w-[95%]">
+                Governed vendor cloud integration, validating vendor technical requirements against internal network architecture, cybersecurity policies, access controls, and integration standards.
+              </p>
+            </div>
+            <div className="flex flex-row space-x-4 ">
+              <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+              <p className="text-white sm:text-base text-xs w-[95%]">
+                Provided end-to-end production and post-go-live support, troubleshooting sales order and billing creation issues to ensure system stability and uninterrupted operations.
+              </p>
+            </div>
+          </div>
+          {/*  */}
+          <p className="text-white sm:text-lg text-sm font-bold">
+            Operational Information System (Project Technical Lead)
+          </p>
+          <div
+            className="flex flex-wrap gap-2 w-full font-bold text-xs"
+          >
+            {[
+              { name: "Technical Analyst", color: "pink" },
+              { name: "Business Analyst", color: "yellow" },
+              { name: "Next.js", color: "cyan" },
+              { name: "Spring Boot", color: "green" },
+              { name: "Data Power", color: "blue" },
+            ].map((tech, idx) => (
+              <div
+                key={idx}
+                className={`w-fit rounded-full ${colorMap[tech.color]}  border  px-4 py-2`}
+              >
+                {tech.name}
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col space-y-4">
+            <div className="flex flex-row space-x-4 ">
+              <MdKeyboardDoubleArrowRight  size={20} className="text-white mt-1 w-[5%]" />
+              <p className="text-white sm:text-base text-xs w-[95%]">
+                Led end-to-end requirements across 9 departments, digitizing 70+ operational forms into a centralized enterprise operation related platform.
+              </p>
+            </div>
+            <div className="flex flex-row space-x-4 ">
+              <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+              <p className="text-white sm:text-base text-xs w-[95%]">
+                Designed a data integration strategy consolidating inputs from flight information, incident reporting, maintenance and more across airside, landside, terminal operations and more.
+              </p>
+            </div>
+            <div className="flex flex-row space-x-4 ">
+              <MdKeyboardDoubleArrowRight size={20} className="text-white mt-1 w-[5%]" />
+              <p className="text-white sm:text-base text-xs w-[95%]">
+                Standardized workflows and data models to improve cross-department efficiency, data consistency, traceability, and scalability.
               </p>
             </div>
           </div>
           
+          
         </div>
+        
         
       ),
     },
